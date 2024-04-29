@@ -1,4 +1,3 @@
-<!-- AdminController -->
 <?php
 
 namespace App\Http\Controllers;
