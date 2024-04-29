@@ -13,6 +13,7 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 });
